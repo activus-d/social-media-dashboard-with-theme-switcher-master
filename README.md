@@ -24,7 +24,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/screencapture%20(3).png)
+![LIGHT MODE](./images/screencapture%20(2).png)
+![DARK MODE](./images/screencapture.png)
 
 ### Links
 
