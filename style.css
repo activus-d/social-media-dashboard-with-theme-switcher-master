@@ -121,6 +121,7 @@ h1 {
     background: white;
     cursor: pointer;
     transform: translateX(2rem);
+    transition: 0.3s;
 }
 
 
@@ -276,7 +277,7 @@ ADDITIONAL STYLES FOR DARK THEME
     border: none;
     background: #262a42;
     transform: translateX(0);
-    transition: 0.1ms;
+    transition: 0.3s;
 }
 .socialBoardDark {
     background: #252b43;
