@@ -251,7 +251,7 @@ ADDITIONAL STYLES FOR FOOTER
     height: 100%;
     text-align: center;
     align-self: start;
-    color: white;
+    color: rgb(13, 100, 144);
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
