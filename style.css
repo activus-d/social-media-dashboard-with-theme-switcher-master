@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    padding: 0 0 2rem 0;
+}
+/**************************************
+LAYOUT
+**************************************/
+body {
+    width: 100%;
+    max-height: 100vh;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-rows: 16rem 5fr 1fr;
+    position: relative;
+}
+header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* height: 15rem; */
+    /* grid-template-rows: 1fr; */
+}
+.theme {
+    justify-self: end;
+    display: flex;
+    justify-content: space-between;
+}
+.themeButton {
+    width: 3.8rem;
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
+}
+.themeSwitch {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  minmax(14rem, auto) 1fr 4fr;
+    position: relative;
+    top: -15%;
+}
+.socials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 2rem;
+}
+.socialBoard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socialsFollowers {
+    display: flex;
+    flex-direction: column;
+}
+.socialsDay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.overview {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:  repeat(2, minmax(10rem, auto));
+    gap: 2rem;
+}
+/* .overviewHeading {
+    grid-column: 1 / 5;
+    grid-row: 1;
+    height: 4rem
+} */
+/**************************************
+ADDITIONAL STYLES FOR HEADER
+**************************************/
+header {
+    padding: 2rem 10rem;
+    background: #f8f9fe;
+    border-radius: 0 0 2rem 2rem;
+}
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+.totalFollowers {
+    color: #767988;
+    font-size: 1.1rem;
+}
+.theme {
+    padding: 1rem 0;
+}
+.themeText {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    color: #898fa1;
+}
+.themeButton {
+    border-radius: 2rem;
+    padding: 0.15rem;
+    background: #aeb2cb;
+    cursor: pointer;
+}
+.themeSwitch {
+    border-radius: 50%;
+    border: none;
+    background: white;
+    cursor: pointer;
+    transform: translateX(2rem);
+}
+
+
+/**************************************
+ADDITIONAL STYLES FOR MAIN
+**************************************/
+main {
+    padding: 0 10rem;
+}
+.socialBoard {
+    padding: 3rem 0 1.5rem 0;
+    background: #f0f3fa;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+.socialsBoard1, .socialsBoard2 {
+    border-top: 0.3rem solid #1f8cea;
+}
+.socialsBoard3 {
+    background: linear-gradient(0.25turn, #fab66b, #eb7f80, #d85892); 
+    padding: 0.3rem 0 0 0;
+    border-radius: 0.3rem;
+}
+.borderGradient3 {
+    height: 100%;
+    width: 100%;
+    padding: 3rem 0 1.5rem 0;
+    background: #f0f3fa;
+    border-radius: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.socialsBoard4 {
+    border-top: 0.3rem solid #b7082c;;
+}
+.socialsTop {
+    display: flex;
+    align-items: end;
+}
+.socialsTop {
+    margin-bottom: 1.5rem;
+}
+.socialsIcon {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 0.5rem;
+}
+.users {
+    color: #767988;
+}
+
+.followersCount {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+.followersText {
+    letter-spacing: 0.2rem;
+    margin-bottom: 2rem;
+    color: #767988;
+}
+.dayCountUp {
+    color:#69cbb3;
+    font-weight: 700;
+}
+.dayCountDown {
+    color:#b4505e;
+    font-weight: 700;
+}
+.iconUp {
+    margin-right: 0.3rem;
+}
+.iconDown {
+    margin-right: 0.3rem;
+}
+.overviewHeading {
+    line-height: 4.8rem;
+    color: #767988;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.overviewBoard {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #f0f3fa;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+.overviewTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.overviewTopTxt {
+    color: #767988;
+}
+.overviewBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.viewsCount {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.diffUp {
+    color:#69cbb3;
+    font-weight: 700;
+}
+.diffDown {
+    color:#b4505e;
+    font-weight: 700;
+}
+
+
+/**************************************
+ADDITIONAL STYLES FOR FOOTER
+**************************************/
+.attribution { 
+    font-size: 11px;
+    height: 100%;
+    text-align: center;
+    align-self: start;
+    color: white;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/**************************************
+ADDITIONAL STYLES FOR DARK THEME
+**************************************/
+.bodyDark {
+    background: #1d2029;
+}
+.headerDark {
+    background: #20222f;
+}
+.themeTextDark {
+    color: white;
+}
+.themeButtonDark {
+    background: linear-gradient(0.25turn, #4a94d1, #3fcc96);;
+    cursor: pointer;
+}
+.themeSwitchDark {
+    border-radius: 50%;
+    border: none;
+    background: #262a42;
+    transform: translateX(0);
+    transition: 0.1ms;
+}
+.socialBoardDark {
+    background: #252b43;
+}
+.socialBoard3Dark {
+    background: linear-gradient(0.25turn, #fab66b, #eb7f80, #d85892);
+}
+.borderGradient3Dark {
+    background: #252b43;
+}
+.overviewBoardDark {
+    background: #252b43;
+}
+.followersCountDark {
+    color: white;
+}
+.viewsCountDark {
+    color: white;
+}
+.overviewHeadingDark {
+    color: white;
+}
+.h1Dark {
+    color: white;
+}
+
+/**************************************
+STYLES FOR SCREEN0-SIZE 800px
+**************************************/
+@media all and ( max-width: 800px ) {
+    header {
+        padding: 2rem 5rem;
+    }
+    h1 {
+        font-size: 2.1rem;
+    }
+    main {
+        padding: 0 5rem;
+    }
+    .overviewHeading {
+        font-size: 1.8rem;
+    }
+}
+
+/**************************************
+STYLES FOR SCREEN-SIZE 780px
+**************************************/
+@media only screen and ( max-width: 780px ) {
+    /*********************************
+    LAYOUT FOR SCREEN-SIZE 780px
+    *********************************/
+    .overviewBottom {
+        flex-direction: column;
+    }
+    /**************************************
+    ADDITIONAL STYLES FOR SCREEN-SIZE 780px
+    ***************************************/
+    .followersCount {
+        font-size: 2.2rem;
+    }
+    .viewsCount {
+        font-size: 1.7rem;
+    }
+}
+
+
+/**************************************
+STYLES FOR SCREEN0-SIZE 450px AND BELOW
+**************************************/
+@media only screen and ( max-width: 450px ) {
+    /*********************************
+    LAYOUT FOR SCREEN-SIZE 450px
+    *********************************/
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 20rem
+    }
+    main {
+        top: 0%;
+        grid-template-rows: minmax(14rem, auto) 1fr 12fr;
+    }
+    .socials {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 2rem;
+    }
+    .overview {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 10rem ;
+    }
+    .overviewBottom {
+        flex-direction: row;
+    }
+    /**************************************
+    ADDITIONAL STYLES FOR SCREEN-SIZE 450px
+    ***************************************/
+    header {
+        padding: 2rem 2rem;
+    }
+    .mainHeading {
+        border-bottom: 1px solid #aeb2cb;
+    }
+    h1 {
+        font-size: 2.1;
+    }
+    .theme {
+        justify-self: auto;
+        padding: 2rem 0;
+    }
+    main {
+        padding: 0 2rem;
+    }
+    .overviewHeading {
+        line-height: 7.8rem;
+    }
+}
+
+
