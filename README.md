@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/activus-d/social-media-dashboard-with-theme-switcher-maste](https://github.com/activus-d/social-media-dashboard-with-theme-switcher-master)
+- Live Site URL: [ https://activus-d.github.io/social-media-dashboard-with-theme-switcher-master/]( https://activus-d.github.io/social-media-dashboard-with-theme-switcher-master/)
 
 ## My process
 
